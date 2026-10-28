@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skilled Sapiens AI Ops Demo</title>
+  <meta name="description" content="Interactive demo of the AI operations plan for Skilled Sapiens: eight personas sharing one learner record. Sample data only.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">SS</span>
+      <span class="brand-txt"><b>Skilled Sapiens</b><small>AI operations demo · sample data</small></span>
+    </div>
+    <div class="top-actions">
+      <span class="clock" id="clock" title="Demo clock"></span>
+      <button type="button" class="btn dark small" data-action="forward" title="Move the demo clock forward one hour">+1 hour</button>
+      <button type="button" class="btn dark small" data-action="toggleGuide">Guided demo</button>
+      <button type="button" class="btn dark small" data-action="reset">Reset</button>
+    </div>
+  </header>
+
+  <nav class="personas" id="personas" aria-label="Switch persona"></nav>
+
+  <div class="shell">
+    <main id="app" tabindex="-1"></main>
+    <aside id="guide" class="guide" aria-label="Guided demo"></aside>
+  </div>
+
+  <footer class="foot">
+    A demo for discussion, not a live system. All people, numbers and policies are sample data; AI responses are simulated in the browser.
+    Your progress is saved in this browser only.
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views/prospect.js"></script>
+  <script src="js/views/counselor.js"></script>
+  <script src="js/views/manager.js"></script>
+  <script src="js/views/learner.js"></script>
+  <script src="js/views/coordinator.js"></script>
+  <script src="js/views/evaluator.js"></script>
+  <script src="js/views/knowledge.js"></script>
+  <script src="js/views/founder.js"></script>
+  <script src="js/guide.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
